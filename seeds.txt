@@ -1,0 +1,13 @@
+
+# ---- Wi-Fi (eduroam) + OS guides
+https://www.th-owl.de/en/skim/documentation/wireless-network/
+https://www.th-owl.de/en/skim/documentation/wireless-network/eduroam/
+https://www.th-owl.de/en/skim/documentation/wireless-network/eduroam/windows/
+https://www.th-owl.de/en/skim/documentation/wireless-network/eduroam/apple-macos/
+https://www.th-owl.de/en/skim/documentation/wireless-network/eduroam/apple-ios/
+https://www.th-owl.de/en/skim/documentation/wireless-network/eduroam/linux/
+
+# ---- Student ID / CampusCard (KISOWL)
+https://www.th-owl.de/en/skim/documentation/campuscard-kisowl/
+https://www.th-owl.de/en/skim/documentation/study-location-herford/     # pickup & practical info
+https://www.th-owl.de/en/skim/documentation/borrowing-library/          # library uses CampusCard
