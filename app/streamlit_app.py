@@ -41,7 +41,7 @@ if not admin_mode:
 
 # --------- App UI ----------
 st.title("🎓 TH OWL Assistant — MVP")
-st.caption("Multilingual answers grounded in official TH-OWL pages. Answers are editable.")
+st.caption("Skip the Website, Ask the Chatbot.")
 
 # --- Admin-only sidebar: index controls ---
 if admin_mode:
