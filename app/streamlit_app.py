@@ -135,7 +135,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = [
         {
             "role": "assistant",
-            "content": "Hi! Ask me anything about TH-OWL. I’ll cite official sources.",
+            "content": "Hi! Ask me anything about TH-OWL.",
             "sources": [],
             "from_llm": False,
             "editable": False,  # greeting is not editable
