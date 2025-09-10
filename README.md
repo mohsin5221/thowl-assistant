@@ -1,4 +1,4 @@
-# TH-OWL Assistant — Architecture (C4)
+# TH-OWL Assistant
 
 This document describes the TH-OWL Assistant using the **C4 model** (C1→C4), plus key sequence diagrams.  
 Codebase (today):
