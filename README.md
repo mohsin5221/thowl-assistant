@@ -98,7 +98,8 @@ Artifacts (persisted):
 )
 
 ### Admin rebuild
-![Sequence — Admin Rebuild](./SEQ_Admin.png)
+![Sequence — Admin Rebuild](.<img width="716" height="355" alt="SEQ_UserQuestions" src="https://github.com/user-attachments/assets/551429da-1d48-4e1c-bffb-0d2650048909" />
+)
 
 ---
 
