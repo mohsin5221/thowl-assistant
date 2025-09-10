@@ -16,8 +16,6 @@ Artifacts (persisted):
 
 ## C1 — System Context
 
-![C1 System Context](./C1_SystemContext.png)
-
 **Summary**
 - Users chat via browser.
 - App answers via OpenAI (grounded by retrieved chunks from official TH-OWL docs).
@@ -27,8 +25,6 @@ Artifacts (persisted):
 ---
 
 ## C2 — Containers
-
-![C2 Containers](./C2_containers.png)
 
 **Containers & responsibilities**
 - **Streamlit App (Python)**: chat UI, session state, admin sidebar, orchestration.
@@ -43,8 +39,6 @@ Artifacts (persisted):
 ---
 
 ## C3 — Components
-
-![C3 Components](./C3_Components.png)
 
 **App components**
 - **Chat Layer**: `st.chat_message/input`; renders sources; only the *latest* assistant answer is editable.
@@ -113,19 +107,11 @@ Artifacts (persisted):
 
 ---
 
-
----
-
-
----
-
 ## Operational Notes
 
 - **Secrets**: set `OPENAI_API_KEY`, `ADMIN_TOKEN` (env or `.streamlit/secrets.toml`).  
 - **Indexing**: put URLs in `seeds.txt`, set **Allowed prefix**, toggle **Follow links**, click **Rebuild**.  
 - **Running locally**: `streamlit run app/streamlit_app.py`.
-
----
 
 
 ---
