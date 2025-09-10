@@ -34,3 +34,18 @@ streamlit run app/streamlit_app.py
 Admin Mode
 http://localhost:8501/?admin=your-admin-token
 
+**Project structure**
+.
+├─ app/
+│  ├─ streamlit_app.py     # main entry (UI + admin)
+│  ├─ retrieval.py         # crawl, chunk, TF-IDF, search
+│  └─ llm.py               # ask_llm, translate, API client
+├─ seeds.txt               # URLs to index
+├─ data/
+│  ├─ cache/               # chunks.csv, vectorizer, matrix
+│  ├─ raw_html/            # saved HTML
+│  └─ raw_pdf/             # saved PDFs
+└─ .streamlit/
+   └─ secrets.toml        
+
+
