@@ -11,3 +11,14 @@ https://www.th-owl.de/en/skim/documentation/wireless-network/eduroam/linux/
 https://www.th-owl.de/en/skim/documentation/university-certificate/
 https://www.th-owl.de/skim/dokumentation/hochschulzertifikat/
 
+# ---- CampusCard
+https://www.th-owl.de/en/skim/documentation/campuscard-kisowl/
+https://www.th-owl.de/en/skim/documentation/campuscard-kisowl/#c-accordion-89036-1
+https://www.th-owl.de/en/skim/documentation/campuscard-kisowl/#c-accordion-89036-2
+https://www.th-owl.de/en/skim/documentation/campuscard-kisowl/#c-accordion-89036-4
+https://www.th-owl.de/en/skim/documentation/campuscard-kisowl/#tab-c89043-1
+https://www.th-owl.de/en/skim/documentation/campuscard-kisowl/#tab-c89043-2
+https://www.th-owl.de/en/skim/documentation/campuscard-kisowl/#tab-c89043-3
+https://www.th-owl.de/en/skim/documentation/campuscard-kisowl/#c-accordion-89044-2
+https://www.th-owl.de/en/skim/documentation/campuscard-kisowl/#tab-c89045-1
+https://www.th-owl.de/en/skim/documentation/campuscard-kisowl/#tab-c89045-2
