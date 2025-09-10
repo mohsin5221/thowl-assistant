@@ -94,7 +94,8 @@ Artifacts (persisted):
 ## Sequences
 
 ### User question
-![Sequence — User Question](./SEQ_UserQuestions.png)
+![Sequence — User Question](.<img width="846" height="368" alt="SEQ_Admin" src="https://github.com/user-attachments/assets/2b7471a5-f911-4114-aac6-3bf4b3d13637" />
+)
 
 ### Admin rebuild
 ![Sequence — Admin Rebuild](./SEQ_Admin.png)
@@ -111,19 +112,9 @@ Artifacts (persisted):
 
 ---
 
-## Constraints & Assumptions
-
-- TF-IDF (scikit-learn) doesn’t support incremental fit → index is **rebuilt** on admin action.
-- Content loaded by client-side JS may not be extracted by `requests + BeautifulSoup`.
-- Public UI hides admin sidebar; admin link is `/?admin=…`.
 
 ---
 
-## Risks & Mitigations
-
-- **Sparse seeds / wrong prefixes** → poor answers. *Mitigate*: seed canonical SKiM pages; check prefixes.  
-- **Missing API key** → no LLM answers. *Mitigate*: show explicit warning; use Streamlit Secrets.  
-- **Hallucination risk** if context empty. *Mitigate*: system prompt rules + “no context” fallback text.
 
 ---
 
@@ -135,12 +126,6 @@ Artifacts (persisted):
 
 ---
 
-## Future Work
-
-- **Append-mode indexing** (dedup by content hash) instead of full rebuilds.  
-- **Embedding retriever** (FAISS/Chroma) for better semantic recall.  
-- **Clarification prompts** (OS for Wi-Fi, campus for CampusCard) if re-enabled in the UI branch.  
-- **Unit tests** for `retrieval.search` and `llm.ask_llm` behaviors.
 
 ---
 
