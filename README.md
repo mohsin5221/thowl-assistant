@@ -121,3 +121,66 @@ Artifacts:
 - **Context**: Concatenation of top-K chunks passed to the LLM.  
 - **TF-IDF**: Term Frequency–Inverse Document Frequency vectorizer for lexical search.
 
+## 🚀 Run the project locally
+
+### 0) Prerequisites
+- Python **3.10+** (3.11 recommended)  
+- Dependencies installed: `pip install -r requirements.txt`  
+- Secrets configured (see **Configuration** above): `OPENAI_API_KEY` (required), `ADMIN_TOKEN` (optional)
+
+> On Windows (PowerShell), activate the venv with:
+> ```
+> .venv\Scripts\Activate.ps1
+> ```
+
+### 1) Start the app
+From the **repo root**:
+```bash
+streamlit run app/streamlit_app.py
+```
+Open the URL Streamlit prints (usually `http://localhost:8501`).
+
+### 2) (Optional) Admin mode — build / rebuild the index
+Open with your admin token to reveal the indexing sidebar:
+```
+http://localhost:8501/?admin=YOUR_ADMIN_TOKEN
+```
+In the sidebar:
+- **Allowed prefix** (recommended):  
+  - `https://www.th-owl.de/skim/dokumentation/`  
+  - *(If you also crawl English pages add: `https://www.th-owl.de/en/skim/documentation/`)*
+- **Follow links under same path**: ✓ (depth-1 discovery)  
+- **Max links per seed**: 12–20  
+- Click **🔁 Rebuild index from seeds.txt**
+
+Artifacts are written to `data/cache/` (`chunks.csv`, `tfidf_vectorizer.joblib`, `tfidf_matrix.joblib`), with raw sources in `data/raw_html/` and `data/raw_pdf/`.
+
+### 3) Seeds (what gets crawled)
+Edit `seeds.txt` (one URL per line, `#` for comments). Prefer canonical SKiM doc pages; avoid fragment anchors like `#tab-…` (often JS-rendered).
+
+Example:
+```txt
+https://www.th-owl.de/skim/dokumentation/
+https://www.th-owl.de/en/skim/documentation/
+# Add specific topics (CampusCard, eduroam, etc.) as needed
+```
+
+### 4) Stop the server
+Press **Ctrl+C** in the terminal.
+
+## 🧪 Troubleshooting
+
+- **“No secrets found” / missing API key**  
+  Create a `.env` or `./.streamlit/secrets.toml` with `OPENAI_API_KEY` (and `ADMIN_TOKEN` if you use admin mode).
+
+- **“Index not built yet”**  
+  Open admin mode and click **Rebuild index**. Confirm your **Allowed prefix** matches the site you seeded.
+
+- **`ModuleNotFoundError: retrieval / llm`**  
+  Run from the **repo root**:
+  ```bash
+  streamlit run app/streamlit_app.py
+  ```
+
+- **App starts but answers look wrong / sparse**  
+  Seed the canonical EN/DE documentation pages; keep **Follow links** enabled; raise **Max links per seed** and rebuild.
