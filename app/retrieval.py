@@ -28,7 +28,7 @@ VEC_PATH   = CACHE / "tfidf_vectorizer.joblib"
 MTRX_PATH  = CACHE / "tfidf_matrix.joblib"
 CHUNKS_CSV = CACHE / "chunks.csv"
 
-HEADERS = {"User-Agent": "TH-OWL-Assistant"}
+HEADERS = {"User-Agent": "TH-OWL-Assistant)"}
 
 # ----------------- helpers -----------------
 def _sanitize_filename(url: str) -> str:
