@@ -1,12 +1,11 @@
 # TH-OWL Assistant
 
-This document describes the TH-OWL Assistant using the **C4 model** (C1→C4), plus key sequence diagrams.  
-Codebase (today):
+Codebase :
 - `app/streamlit_app.py` — Chat UI (Streamlit), admin-only indexing, “edit latest answer”, sources.
 - `retrieval.py` — Crawl -> chunk -> **TF-IDF** index build; search; shallow link discovery.
 - `llm.py` — OpenAI wrapper (`ask_llm`, `translate`), language detection & retries.
 
-Artifacts (persisted):
+Artifacts:
 - `data/cache/chunks.csv`
 - `data/cache/tfidf_vectorizer.joblib`
 - `data/cache/tfidf_matrix.joblib`
