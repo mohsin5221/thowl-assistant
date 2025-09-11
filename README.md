@@ -87,11 +87,11 @@ Artifacts:
 ## Sequences
 
 ### User question
-![Sequence — User Question](.<img width="846" height="368" alt="SEQ_Admin" src="https://github.com/user-attachments/assets/2b7471a5-f911-4114-aac6-3bf4b3d13637" />
+![Sequence — User Question](.<img width="716" height="355" alt="SEQ_UserQuestions" src="https://github.com/user-attachments/assets/551429da-1d48-4e1c-bffb-0d2650048909" />
 )
 
 ### Admin rebuild
-![Sequence — Admin Rebuild](.<img width="716" height="355" alt="SEQ_UserQuestions" src="https://github.com/user-attachments/assets/551429da-1d48-4e1c-bffb-0d2650048909" />
+![Sequence — Admin Rebuild](.<img width="846" height="368" alt="SEQ_Admin" src="https://github.com/user-attachments/assets/2b7471a5-f911-4114-aac6-3bf4b3d13637"/>
 )
 
 ---
